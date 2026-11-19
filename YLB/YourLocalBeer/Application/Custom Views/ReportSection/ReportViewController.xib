@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportViewController" customModule="Your_Local_Beer" customModuleProvider="target">
+            <connections>
+                <outlet property="txtHeader" destination="coM-yo-r8q" id="icC-vs-qTk"/>
+                <outlet property="txtReportText" destination="Yt5-cv-TJc" id="8v0-Aw-D5m"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="219"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwk-5h-QNh">
+                    <rect key="frame" x="0.0" y="0.0" width="290" height="219"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="coM-yo-r8q">
+                            <rect key="frame" x="8" y="14" width="274" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="2CK-7a-qya"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="3WR-2Z-6Iv"/>
+                            </connections>
+                        </textField>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-cv-TJc" customClass="IQTextView" customModule="IQKeyboardManagerSwift">
+                            <rect key="frame" x="8" y="63" width="274" height="137"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="137" id="3Dc-dh-voJ"/>
+                            </constraints>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Write the report here"/>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="coM-yo-r8q" secondAttribute="trailing" constant="8" id="R5L-HO-QsB"/>
+                        <constraint firstItem="Yt5-cv-TJc" firstAttribute="leading" secondItem="lwk-5h-QNh" secondAttribute="leading" constant="8" id="Rzc-4U-aj8"/>
+                        <constraint firstAttribute="bottom" secondItem="Yt5-cv-TJc" secondAttribute="bottom" constant="19" id="UPB-RG-LVq"/>
+                        <constraint firstAttribute="trailing" secondItem="Yt5-cv-TJc" secondAttribute="trailing" constant="8" id="enR-Ss-x4P"/>
+                        <constraint firstItem="coM-yo-r8q" firstAttribute="leading" secondItem="lwk-5h-QNh" secondAttribute="leading" constant="8" id="jIt-JJ-LVx"/>
+                        <constraint firstItem="Yt5-cv-TJc" firstAttribute="top" secondItem="coM-yo-r8q" secondAttribute="bottom" constant="15" id="qol-gh-gnQ"/>
+                        <constraint firstItem="coM-yo-r8q" firstAttribute="top" secondItem="lwk-5h-QNh" secondAttribute="top" constant="14" id="vNa-9n-uam"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lwk-5h-QNh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6KG-no-4gl"/>
+                <constraint firstItem="lwk-5h-QNh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="J3d-SY-HTv"/>
+                <constraint firstItem="lwk-5h-QNh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RCZ-dU-tgY"/>
+                <constraint firstItem="lwk-5h-QNh" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Th4-6b-qgu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.34375"/>
+        </view>
+    </objects>
+</document>

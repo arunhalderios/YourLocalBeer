@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+  platform :ios, '9.0'
+
+target 'YourLocalBeer' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'GoogleSignIn'
+  pod 'Google'
+  pod 'SDWebImage', '~>3.8'
+  pod 'Alamofire', '~>4.4'
+  pod 'SVProgressHUD'
+  pod 'IQKeyboardManagerSwift'
+  pod 'HCSStarRatingView', '~> 1.5'
+  pod 'AZSearchView'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'FacebookCore', :git => 'https://github.com/facebook/facebook-sdk-swift', :branch => 'master'
+  pod 'FacebookLogin', :git => 'https://github.com/facebook/facebook-sdk-swift', :branch => 'master'
+  pod 'FacebookShare', :git => 'https://github.com/facebook/facebook-sdk-swift', :branch => 'master'
+  pod 'GrowingTextView'
+  pod 'PopupDialog'
+  pod 'FlagPhoneNumber'
+  pod 'PasswordTextField'
+  pod 'Toast-Swift'
+  pod 'UICircularProgressRing'
+  pod 'TCPickerView', :git => 'https://github.com/ChernyshenkoTaras/TCPickerView.git', :branch => 'master'
+  pod 'AMProgressBar'
+  pod 'JJFloatingActionButton'
+  # Pods for YourLocalBeer
+
+end
